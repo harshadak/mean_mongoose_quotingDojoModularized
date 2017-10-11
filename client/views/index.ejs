@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuotingDojo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center; 
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: default;
+        }
+        form {
+            border: 2px solid black;
+            display: block;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input, select, textarea {
+            display: block;
+            margin-bottom: 15px;
+        }
+        div.result {
+            margin: 0 auto;
+        }
+        h4, p {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to QuotingDojo</h1>
+    <form action="/quotes" method="post">
+        <label for="">Your name:</label>
+        <input type="text" placeholder="Enter name" name="name">
+        <label for="">Your quote:</label>
+        <textarea placeholder="Enter quote" name="quote" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Add my quote!">
+        <button><a href="/quotes">Skip to quotes!</a></button>
+    </form>
+</body>
+</html>

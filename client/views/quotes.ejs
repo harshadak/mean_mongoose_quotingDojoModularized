@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quotes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Here are the awesome quotes!</h2>
+    <a href="/">Home</a>
+    <% for(var i in quotesBank) { %>
+        <div class="quote-body">
+            <h3>"<%= quotesBank[i].quote %>"</h3>
+            <p>- <%= quotesBank[i].name %> at <%= quotesBank[i].createdAt.toUTCString() %></p>
+        </div>
+    <% } %>
+</body>
+</html>
